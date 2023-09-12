@@ -13,10 +13,13 @@ function register() {
         alert("Registration Successfull \n Login Below")
         window.location="./login.html"
     }
-    else{
+    else if((password1 != password2 )){
         alert ("Password do not Match")
         window.location="./index.html"
     }
+    else(
+        alert("Fil all fields")
+    )
 }
 
 
