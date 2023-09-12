@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(16, 16, 66);
+    background-color: rgb(191, 191, 194);
 }
 
 .container {
@@ -26,6 +26,7 @@ label, input {
 }
 
 input[type="text"],
+input[type="email"],
 input[type="password"] {
     width: 95%;
     padding: 10px;
@@ -36,7 +37,7 @@ input[type="password"] {
 #button {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #450404;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -44,5 +45,5 @@ input[type="password"] {
 }
 
 #button:hover {
-    background-color: #0056b3;
+    background-color: #d2102a;
 }

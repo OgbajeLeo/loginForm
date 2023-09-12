@@ -9,9 +9,11 @@ function register() {
         localStorage.setItem("email", email)
         localStorage.setItem("password", password1)
         localStorage.setItem("fullName", name)
+        window.location.href="./login.html"
     }
     else{
         alert("Password do no match")
+        window.location.href="./index.html"
     }
 }
 
@@ -27,6 +29,7 @@ function login() {
     }
     else {
         alert("Incorrect Details")
+       
     }
     }
 
