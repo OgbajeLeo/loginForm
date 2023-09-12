@@ -1,22 +1,26 @@
-
+//function when register button is clicked
 function register() {
     let name = document.getElementById("name").value
     let email = document.getElementById("email").value
     let password1 = document.getElementById("password1").value
     let password2 = document.getElementById("password2").value
 
-    if (password1 === password2){
+    if ((password1 === password2 ) &&(password1 !="")&&(password2 !="")){
         localStorage.setItem("email", email)
         localStorage.setItem("password", password1)
         localStorage.setItem("fullName", name)
-        window.location.href="./login.html"
+
+        alert("Registration Successfull \n Login Below")
+        window.location="./login.html"
     }
     else{
-        alert("Password do no match")
-        window.location.href="./index.html"
+        alert ("Password do not Match")
+        window.location="./index.html"
     }
 }
 
+
+//function when Login button is clicked
 function login() {
     let email = document.getElementById("email").value
     let password3 = document.getElementById("password3").value
