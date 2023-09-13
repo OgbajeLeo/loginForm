@@ -13,10 +13,12 @@ function login() {
 
         // Check if storedStudent exists and credentials match
         if (email === storedStudent.email && password === storedStudent.password1) {
-
+            let hashedMail = storedStudent.email.replace(/(.*)@/, "**********");
             alert(`
-            Dear ${storedStudent.name}, 
-            Welcome to your acount`)
+            Welcome 
+            
+            Fullname: ${storedStudent.name}, 
+            Email: ${hashedMail}`)
             document.getElementById("email").value = "";
             document.getElementById("password").value = "";
         } else {
