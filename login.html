@@ -11,15 +11,16 @@
     <div class="container">
 
         <h2>LOGIN IN</h2>
-        <form>
+        <p id="pop" class="pop"></p>  
+        <form id="logForm">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Email" required>
             
             <label for="signin-password">Password</label>
-            <input type="password" id="password3" name="password3" placeholder="Password" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
             
             <input type="submit" value="Sign in" id="button" onclick="login()">
-            <p>New User ? <a href="./index.html">Register</a></p>
+            <center><p>New User ? <a href="./index.html">Register</a></p></center>
         </form>
     </div>
     <script src="./script.js"></script>

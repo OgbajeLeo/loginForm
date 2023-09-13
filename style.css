@@ -2,7 +2,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(191, 191, 194);
 }
-
+a{ 
+    text-decoration: none;
+    font-weight: 600;
+}
 .container {
     max-width: 400px;
     margin: 0 auto;
@@ -46,4 +49,9 @@ input[type="password"] {
 
 #button:hover {
     background-color: #d2102a;
+}
+#pop{
+    color:red;
+    font-style: italic;
+    font-size: small;
 }
